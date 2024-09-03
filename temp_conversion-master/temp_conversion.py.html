@@ -1,0 +1,804 @@
+<html><body><h1>C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py</h1>Killed 57 out of 130 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 8</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -9,7 +9,7 @@
+             self.input_value = self.input_value
+             self.input_unit = self.input_unit.lower()
+             self.response = kwargs['response']
+-            self.answer = 0.0
++            self.answer = 1.0
+             self.is_response_correct = "correct"
+             self.output_unit = kwargs['unit']
+             self.units_list = ("fahrenheit", "celsius", "kelvin", "rankine")
+</pre><h3>Mutant 9</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -9,7 +9,7 @@
+             self.input_value = self.input_value
+             self.input_unit = self.input_unit.lower()
+             self.response = kwargs['response']
+-            self.answer = 0.0
++            self.answer = None
+             self.is_response_correct = "correct"
+             self.output_unit = kwargs['unit']
+             self.units_list = ("fahrenheit", "celsius", "kelvin", "rankine")
+</pre><h3>Mutant 21</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -15,7 +15,7 @@
+             self.units_list = ("fahrenheit", "celsius", "kelvin", "rankine")
+         except ValueError as e:
+             self.is_response_correct = "invalid"
+-            print("[ValueError / __init__()] " + str(e) + ". Exiting.")
++            print("XX[ValueError / __init__()] XX" + str(e) + ". Exiting.")
+ 
+     # check if provided unit name is .units_list collection
+     def is_unit_name_valid(self, unit_name):
+</pre><h3>Mutant 24</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -15,7 +15,7 @@
+             self.units_list = ("fahrenheit", "celsius", "kelvin", "rankine")
+         except ValueError as e:
+             self.is_response_correct = "invalid"
+-            print("[ValueError / __init__()] " + str(e) + ". Exiting.")
++            print("[ValueError / __init__()] " + str(e) + "XX. Exiting.XX")
+ 
+     # check if provided unit name is .units_list collection
+     def is_unit_name_valid(self, unit_name):
+</pre><h3>Mutant 25</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -22,7 +22,7 @@
+         try:
+             self.units_list.index(unit_name.lower())
+         except ValueError as e:
+-            self.is_response_correct = "incorrect"
++            self.is_response_correct = "XXincorrectXX"
+             print("[ValueError / is_unit_name_valid()] " + str(e) + ". Exiting.")
+         except Exception as e:
+             self.is_response_correct = "incorrect"
+</pre><h3>Mutant 26</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -22,7 +22,7 @@
+         try:
+             self.units_list.index(unit_name.lower())
+         except ValueError as e:
+-            self.is_response_correct = "incorrect"
++            self.is_response_correct = None
+             print("[ValueError / is_unit_name_valid()] " + str(e) + ". Exiting.")
+         except Exception as e:
+             self.is_response_correct = "incorrect"
+</pre><h3>Mutant 27</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -23,7 +23,7 @@
+             self.units_list.index(unit_name.lower())
+         except ValueError as e:
+             self.is_response_correct = "incorrect"
+-            print("[ValueError / is_unit_name_valid()] " + str(e) + ". Exiting.")
++            print("XX[ValueError / is_unit_name_valid()] XX" + str(e) + ". Exiting.")
+         except Exception as e:
+             self.is_response_correct = "incorrect"
+             print("[Exception / is_unit_name_valid()] " + str(e) + ". Exiting.")
+</pre><h3>Mutant 28</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -23,7 +23,7 @@
+             self.units_list.index(unit_name.lower())
+         except ValueError as e:
+             self.is_response_correct = "incorrect"
+-            print("[ValueError / is_unit_name_valid()] " + str(e) + ". Exiting.")
++            print("[ValueError / is_unit_name_valid()] " - str(e) + ". Exiting.")
+         except Exception as e:
+             self.is_response_correct = "incorrect"
+             print("[Exception / is_unit_name_valid()] " + str(e) + ". Exiting.")
+</pre><h3>Mutant 29</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -23,7 +23,7 @@
+             self.units_list.index(unit_name.lower())
+         except ValueError as e:
+             self.is_response_correct = "incorrect"
+-            print("[ValueError / is_unit_name_valid()] " + str(e) + ". Exiting.")
++            print("[ValueError / is_unit_name_valid()] " + str(e) - ". Exiting.")
+         except Exception as e:
+             self.is_response_correct = "incorrect"
+             print("[Exception / is_unit_name_valid()] " + str(e) + ". Exiting.")
+</pre><h3>Mutant 30</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -23,7 +23,7 @@
+             self.units_list.index(unit_name.lower())
+         except ValueError as e:
+             self.is_response_correct = "incorrect"
+-            print("[ValueError / is_unit_name_valid()] " + str(e) + ". Exiting.")
++            print("[ValueError / is_unit_name_valid()] " + str(e) + "XX. Exiting.XX")
+         except Exception as e:
+             self.is_response_correct = "incorrect"
+             print("[Exception / is_unit_name_valid()] " + str(e) + ". Exiting.")
+</pre><h3>Mutant 31</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -25,7 +25,7 @@
+             self.is_response_correct = "incorrect"
+             print("[ValueError / is_unit_name_valid()] " + str(e) + ". Exiting.")
+         except Exception as e:
+-            self.is_response_correct = "incorrect"
++            self.is_response_correct = "XXincorrectXX"
+             print("[Exception / is_unit_name_valid()] " + str(e) + ". Exiting.")
+         return self
+ 
+</pre><h3>Mutant 32</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -25,7 +25,7 @@
+             self.is_response_correct = "incorrect"
+             print("[ValueError / is_unit_name_valid()] " + str(e) + ". Exiting.")
+         except Exception as e:
+-            self.is_response_correct = "incorrect"
++            self.is_response_correct = None
+             print("[Exception / is_unit_name_valid()] " + str(e) + ". Exiting.")
+         return self
+ 
+</pre><h3>Mutant 33</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -26,7 +26,7 @@
+             print("[ValueError / is_unit_name_valid()] " + str(e) + ". Exiting.")
+         except Exception as e:
+             self.is_response_correct = "incorrect"
+-            print("[Exception / is_unit_name_valid()] " + str(e) + ". Exiting.")
++            print("XX[Exception / is_unit_name_valid()] XX" + str(e) + ". Exiting.")
+         return self
+ 
+     # check if input and response values are numeric
+</pre><h3>Mutant 34</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -26,7 +26,7 @@
+             print("[ValueError / is_unit_name_valid()] " + str(e) + ". Exiting.")
+         except Exception as e:
+             self.is_response_correct = "incorrect"
+-            print("[Exception / is_unit_name_valid()] " + str(e) + ". Exiting.")
++            print("[Exception / is_unit_name_valid()] " - str(e) + ". Exiting.")
+         return self
+ 
+     # check if input and response values are numeric
+</pre><h3>Mutant 35</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -26,7 +26,7 @@
+             print("[ValueError / is_unit_name_valid()] " + str(e) + ". Exiting.")
+         except Exception as e:
+             self.is_response_correct = "incorrect"
+-            print("[Exception / is_unit_name_valid()] " + str(e) + ". Exiting.")
++            print("[Exception / is_unit_name_valid()] " + str(e) - ". Exiting.")
+         return self
+ 
+     # check if input and response values are numeric
+</pre><h3>Mutant 36</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -26,7 +26,7 @@
+             print("[ValueError / is_unit_name_valid()] " + str(e) + ". Exiting.")
+         except Exception as e:
+             self.is_response_correct = "incorrect"
+-            print("[Exception / is_unit_name_valid()] " + str(e) + ". Exiting.")
++            print("[Exception / is_unit_name_valid()] " + str(e) + "XX. Exiting.XX")
+         return self
+ 
+     # check if input and response values are numeric
+</pre><h3>Mutant 39</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -42,7 +42,7 @@
+     # chooses the right formula to do the temp conversion
+     def convert_input_to_answer(self):
+         if not self.is_input_numeric():
+-            self.is_response_correct = "invalid"
++            self.is_response_correct = "XXinvalidXX"
+         if not self.is_response_numeric():
+             self.is_response_correct = "incorrect"
+ 
+</pre><h3>Mutant 40</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -42,7 +42,7 @@
+     # chooses the right formula to do the temp conversion
+     def convert_input_to_answer(self):
+         if not self.is_input_numeric():
+-            self.is_response_correct = "invalid"
++            self.is_response_correct = None
+         if not self.is_response_numeric():
+             self.is_response_correct = "incorrect"
+ 
+</pre><h3>Mutant 58</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -56,7 +56,7 @@
+     # check if values are numeric - if so, then run conversion to get answer
+     # check if answer matches student response
+     def check_response_to_answer(self):
+-        if self.is_response_correct == "correct":
++        if self.is_response_correct == "XXcorrectXX":
+             self.is_unit_name_valid(self.input_unit)
+             self.is_unit_name_valid(self.output_unit)
+ 
+</pre><h3>Mutant 72</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -78,7 +78,7 @@
+         return self
+ 
+     def f_to_k(self):
+-        self.answer = round(self.input_value * 1.8 - 459.67)
++        self.answer = round(self.input_value / 1.8 - 459.67)
+         return self
+ 
+     def k_to_f(self):
+</pre><h3>Mutant 73</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -78,7 +78,7 @@
+         return self
+ 
+     def f_to_k(self):
+-        self.answer = round(self.input_value * 1.8 - 459.67)
++        self.answer = round(self.input_value * 2.8 - 459.67)
+         return self
+ 
+     def k_to_f(self):
+</pre><h3>Mutant 74</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -78,7 +78,7 @@
+         return self
+ 
+     def f_to_k(self):
+-        self.answer = round(self.input_value * 1.8 - 459.67)
++        self.answer = round(self.input_value * 1.8 + 459.67)
+         return self
+ 
+     def k_to_f(self):
+</pre><h3>Mutant 75</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -78,7 +78,7 @@
+         return self
+ 
+     def f_to_k(self):
+-        self.answer = round(self.input_value * 1.8 - 459.67)
++        self.answer = round(self.input_value * 1.8 - 460.67)
+         return self
+ 
+     def k_to_f(self):
+</pre><h3>Mutant 76</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -78,7 +78,7 @@
+         return self
+ 
+     def f_to_k(self):
+-        self.answer = round(self.input_value * 1.8 - 459.67)
++        self.answer = None
+         return self
+ 
+     def k_to_f(self):
+</pre><h3>Mutant 77</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -82,7 +82,7 @@
+         return self
+ 
+     def k_to_f(self):
+-        self.answer = round((self.input_value + 459.67) / 1.8)
++        self.answer = round((self.input_value - 459.67) / 1.8)
+         return self
+ 
+     def f_to_c(self):
+</pre><h3>Mutant 78</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -82,7 +82,7 @@
+         return self
+ 
+     def k_to_f(self):
+-        self.answer = round((self.input_value + 459.67) / 1.8)
++        self.answer = round((self.input_value + 460.67) / 1.8)
+         return self
+ 
+     def f_to_c(self):
+</pre><h3>Mutant 79</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -82,7 +82,7 @@
+         return self
+ 
+     def k_to_f(self):
+-        self.answer = round((self.input_value + 459.67) / 1.8)
++        self.answer = round((self.input_value + 459.67) * 1.8)
+         return self
+ 
+     def f_to_c(self):
+</pre><h3>Mutant 80</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -82,7 +82,7 @@
+         return self
+ 
+     def k_to_f(self):
+-        self.answer = round((self.input_value + 459.67) / 1.8)
++        self.answer = round((self.input_value + 459.67) / 2.8)
+         return self
+ 
+     def f_to_c(self):
+</pre><h3>Mutant 82</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -86,7 +86,7 @@
+         return self
+ 
+     def f_to_c(self):
+-        self.answer = round((self.input_value - 32) / 1.8)
++        self.answer = round((self.input_value + 32) / 1.8)
+         return self
+ 
+     def c_to_f(self):
+</pre><h3>Mutant 83</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -86,7 +86,7 @@
+         return self
+ 
+     def f_to_c(self):
+-        self.answer = round((self.input_value - 32) / 1.8)
++        self.answer = round((self.input_value - 33) / 1.8)
+         return self
+ 
+     def c_to_f(self):
+</pre><h3>Mutant 84</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -86,7 +86,7 @@
+         return self
+ 
+     def f_to_c(self):
+-        self.answer = round((self.input_value - 32) / 1.8)
++        self.answer = round((self.input_value - 32) * 1.8)
+         return self
+ 
+     def c_to_f(self):
+</pre><h3>Mutant 85</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -86,7 +86,7 @@
+         return self
+ 
+     def f_to_c(self):
+-        self.answer = round((self.input_value - 32) / 1.8)
++        self.answer = round((self.input_value - 32) / 2.8)
+         return self
+ 
+     def c_to_f(self):
+</pre><h3>Mutant 86</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -86,7 +86,7 @@
+         return self
+ 
+     def f_to_c(self):
+-        self.answer = round((self.input_value - 32) / 1.8)
++        self.answer = None
+         return self
+ 
+     def c_to_f(self):
+</pre><h3>Mutant 87</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -90,7 +90,7 @@
+         return self
+ 
+     def c_to_f(self):
+-        self.answer = round(1.8*self.input_value + 32)
++        self.answer = round(2.8*self.input_value + 32)
+         return self
+ 
+     def r_to_k(self):
+</pre><h3>Mutant 88</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -90,7 +90,7 @@
+         return self
+ 
+     def c_to_f(self):
+-        self.answer = round(1.8*self.input_value + 32)
++        self.answer = round(1.8/self.input_value + 32)
+         return self
+ 
+     def r_to_k(self):
+</pre><h3>Mutant 89</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -90,7 +90,7 @@
+         return self
+ 
+     def c_to_f(self):
+-        self.answer = round(1.8*self.input_value + 32)
++        self.answer = round(1.8*self.input_value - 32)
+         return self
+ 
+     def r_to_k(self):
+</pre><h3>Mutant 90</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -90,7 +90,7 @@
+         return self
+ 
+     def c_to_f(self):
+-        self.answer = round(1.8*self.input_value + 32)
++        self.answer = round(1.8*self.input_value + 33)
+         return self
+ 
+     def r_to_k(self):
+</pre><h3>Mutant 91</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -90,7 +90,7 @@
+         return self
+ 
+     def c_to_f(self):
+-        self.answer = round(1.8*self.input_value + 32)
++        self.answer = None
+         return self
+ 
+     def r_to_k(self):
+</pre><h3>Mutant 92</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -94,7 +94,7 @@
+         return self
+ 
+     def r_to_k(self):
+-        self.answer = round(self.input_value * 1.8)
++        self.answer = round(self.input_value / 1.8)
+         return self
+ 
+     def k_to_r(self):
+</pre><h3>Mutant 93</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -94,7 +94,7 @@
+         return self
+ 
+     def r_to_k(self):
+-        self.answer = round(self.input_value * 1.8)
++        self.answer = round(self.input_value * 2.8)
+         return self
+ 
+     def k_to_r(self):
+</pre><h3>Mutant 94</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -94,7 +94,7 @@
+         return self
+ 
+     def r_to_k(self):
+-        self.answer = round(self.input_value * 1.8)
++        self.answer = None
+         return self
+ 
+     def k_to_r(self):
+</pre><h3>Mutant 95</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -98,7 +98,7 @@
+         return self
+ 
+     def k_to_r(self):
+-        self.answer = round(self.input_value / 1.8)
++        self.answer = round(self.input_value * 1.8)
+         return self
+ 
+     def f_to_r(self):
+</pre><h3>Mutant 96</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -98,7 +98,7 @@
+         return self
+ 
+     def k_to_r(self):
+-        self.answer = round(self.input_value / 1.8)
++        self.answer = round(self.input_value / 2.8)
+         return self
+ 
+     def f_to_r(self):
+</pre><h3>Mutant 97</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -98,7 +98,7 @@
+         return self
+ 
+     def k_to_r(self):
+-        self.answer = round(self.input_value / 1.8)
++        self.answer = None
+         return self
+ 
+     def f_to_r(self):
+</pre><h3>Mutant 101</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -106,7 +106,7 @@
+         return self
+ 
+     def r_to_f(self):
+-        self.answer = self.input_value - 459.67
++        self.answer = self.input_value + 459.67
+         return self
+ 
+     def c_to_r(self):
+</pre><h3>Mutant 102</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -106,7 +106,7 @@
+         return self
+ 
+     def r_to_f(self):
+-        self.answer = self.input_value - 459.67
++        self.answer = self.input_value - 460.67
+         return self
+ 
+     def c_to_r(self):
+</pre><h3>Mutant 103</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -106,7 +106,7 @@
+         return self
+ 
+     def r_to_f(self):
+-        self.answer = self.input_value - 459.67
++        self.answer = None
+         return self
+ 
+     def c_to_r(self):
+</pre><h3>Mutant 104</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -110,7 +110,7 @@
+         return self
+ 
+     def c_to_r(self):
+-        self.answer = round((self.input_value + 273.15) * 1.8)
++        self.answer = round((self.input_value - 273.15) * 1.8)
+         return self
+ 
+     def r_to_c(self):
+</pre><h3>Mutant 105</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -110,7 +110,7 @@
+         return self
+ 
+     def c_to_r(self):
+-        self.answer = round((self.input_value + 273.15) * 1.8)
++        self.answer = round((self.input_value + 274.15) * 1.8)
+         return self
+ 
+     def r_to_c(self):
+</pre><h3>Mutant 106</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -110,7 +110,7 @@
+         return self
+ 
+     def c_to_r(self):
+-        self.answer = round((self.input_value + 273.15) * 1.8)
++        self.answer = round((self.input_value + 273.15) / 1.8)
+         return self
+ 
+     def r_to_c(self):
+</pre><h3>Mutant 107</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -110,7 +110,7 @@
+         return self
+ 
+     def c_to_r(self):
+-        self.answer = round((self.input_value + 273.15) * 1.8)
++        self.answer = round((self.input_value + 273.15) * 2.8)
+         return self
+ 
+     def r_to_c(self):
+</pre><h3>Mutant 108</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -110,7 +110,7 @@
+         return self
+ 
+     def c_to_r(self):
+-        self.answer = round((self.input_value + 273.15) * 1.8)
++        self.answer = None
+         return self
+ 
+     def r_to_c(self):
+</pre><h3>Mutant 109</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -114,7 +114,7 @@
+         return self
+ 
+     def r_to_c(self):
+-        self.answer = round((self.input_value - 491.67) / 1.8)
++        self.answer = round((self.input_value + 491.67) / 1.8)
+         return self
+ 
+ 
+</pre><h3>Mutant 110</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -114,7 +114,7 @@
+         return self
+ 
+     def r_to_c(self):
+-        self.answer = round((self.input_value - 491.67) / 1.8)
++        self.answer = round((self.input_value - 492.67) / 1.8)
+         return self
+ 
+ 
+</pre><h3>Mutant 111</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -114,7 +114,7 @@
+         return self
+ 
+     def r_to_c(self):
+-        self.answer = round((self.input_value - 491.67) / 1.8)
++        self.answer = round((self.input_value - 491.67) * 1.8)
+         return self
+ 
+ 
+</pre><h3>Mutant 112</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -114,7 +114,7 @@
+         return self
+ 
+     def r_to_c(self):
+-        self.answer = round((self.input_value - 491.67) / 1.8)
++        self.answer = round((self.input_value - 491.67) / 2.8)
+         return self
+ 
+ 
+</pre><h3>Mutant 114</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -118,7 +118,7 @@
+         return self
+ 
+ 
+-if __name__ == "__main__":
++if __name__ != "__main__":
+     ap = argparse.ArgumentParser()
+     ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
+     ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+</pre><h3>Mutant 115</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -118,7 +118,7 @@
+         return self
+ 
+ 
+-if __name__ == "__main__":
++if __name__ == "XX__main__XX":
+     ap = argparse.ArgumentParser()
+     ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
+     ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+</pre><h3>Mutant 116</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -119,7 +119,7 @@
+ 
+ 
+ if __name__ == "__main__":
+-    ap = argparse.ArgumentParser()
++    ap = None
+     ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
+     ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+     ap.add_argument("-r", "--response", required=True, help="Response input")
+</pre><h3>Mutant 117</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -120,7 +120,7 @@
+ 
+ if __name__ == "__main__":
+     ap = argparse.ArgumentParser()
+-    ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
++    ap.add_argument("XX-iXX", "--input", required=True, help="Temperature input and unit")
+     ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+     ap.add_argument("-r", "--response", required=True, help="Response input")
+     args = vars(ap.parse_args())
+</pre><h3>Mutant 118</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -120,7 +120,7 @@
+ 
+ if __name__ == "__main__":
+     ap = argparse.ArgumentParser()
+-    ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
++    ap.add_argument("-i", "XX--inputXX", required=True, help="Temperature input and unit")
+     ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+     ap.add_argument("-r", "--response", required=True, help="Response input")
+     args = vars(ap.parse_args())
+</pre><h3>Mutant 119</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -120,7 +120,7 @@
+ 
+ if __name__ == "__main__":
+     ap = argparse.ArgumentParser()
+-    ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
++    ap.add_argument("-i", "--input", required=False, help="Temperature input and unit")
+     ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+     ap.add_argument("-r", "--response", required=True, help="Response input")
+     args = vars(ap.parse_args())
+</pre><h3>Mutant 120</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -120,7 +120,7 @@
+ 
+ if __name__ == "__main__":
+     ap = argparse.ArgumentParser()
+-    ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
++    ap.add_argument("-i", "--input", required=True, help="XXTemperature input and unitXX")
+     ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+     ap.add_argument("-r", "--response", required=True, help="Response input")
+     args = vars(ap.parse_args())
+</pre><h3>Mutant 121</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -121,7 +121,7 @@
+ if __name__ == "__main__":
+     ap = argparse.ArgumentParser()
+     ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
+-    ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
++    ap.add_argument("XX-uXX", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+     ap.add_argument("-r", "--response", required=True, help="Response input")
+     args = vars(ap.parse_args())
+     tc = TempConvertor(args)
+</pre><h3>Mutant 122</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -121,7 +121,7 @@
+ if __name__ == "__main__":
+     ap = argparse.ArgumentParser()
+     ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
+-    ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
++    ap.add_argument("-u", "XX--unitXX", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+     ap.add_argument("-r", "--response", required=True, help="Response input")
+     args = vars(ap.parse_args())
+     tc = TempConvertor(args)
+</pre><h3>Mutant 123</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -121,7 +121,7 @@
+ if __name__ == "__main__":
+     ap = argparse.ArgumentParser()
+     ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
+-    ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
++    ap.add_argument("-u", "--unit", required=False, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+     ap.add_argument("-r", "--response", required=True, help="Response input")
+     args = vars(ap.parse_args())
+     tc = TempConvertor(args)
+</pre><h3>Mutant 124</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -121,7 +121,7 @@
+ if __name__ == "__main__":
+     ap = argparse.ArgumentParser()
+     ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
+-    ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
++    ap.add_argument("-u", "--unit", required=True, help="XXUnit input (Fahreheit, Celsius, Kelvin, Rankine)XX")
+     ap.add_argument("-r", "--response", required=True, help="Response input")
+     args = vars(ap.parse_args())
+     tc = TempConvertor(args)
+</pre><h3>Mutant 125</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -122,7 +122,7 @@
+     ap = argparse.ArgumentParser()
+     ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
+     ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+-    ap.add_argument("-r", "--response", required=True, help="Response input")
++    ap.add_argument("XX-rXX", "--response", required=True, help="Response input")
+     args = vars(ap.parse_args())
+     tc = TempConvertor(args)
+     tc\
+</pre><h3>Mutant 126</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -122,7 +122,7 @@
+     ap = argparse.ArgumentParser()
+     ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
+     ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+-    ap.add_argument("-r", "--response", required=True, help="Response input")
++    ap.add_argument("-r", "XX--responseXX", required=True, help="Response input")
+     args = vars(ap.parse_args())
+     tc = TempConvertor(args)
+     tc\
+</pre><h3>Mutant 127</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -122,7 +122,7 @@
+     ap = argparse.ArgumentParser()
+     ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
+     ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+-    ap.add_argument("-r", "--response", required=True, help="Response input")
++    ap.add_argument("-r", "--response", required=False, help="Response input")
+     args = vars(ap.parse_args())
+     tc = TempConvertor(args)
+     tc\
+</pre><h3>Mutant 128</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -122,7 +122,7 @@
+     ap = argparse.ArgumentParser()
+     ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
+     ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+-    ap.add_argument("-r", "--response", required=True, help="Response input")
++    ap.add_argument("-r", "--response", required=True, help="XXResponse inputXX")
+     args = vars(ap.parse_args())
+     tc = TempConvertor(args)
+     tc\
+</pre><h3>Mutant 129</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -123,7 +123,7 @@
+     ap.add_argument("-i", "--input", required=True, help="Temperature input and unit")
+     ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+     ap.add_argument("-r", "--response", required=True, help="Response input")
+-    args = vars(ap.parse_args())
++    args = None
+     tc = TempConvertor(args)
+     tc\
+         .check_response_to_answer()
+</pre><h3>Mutant 130</h3><pre>--- C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
++++ C:\Users\Kayla\OneDrive\Documentos\햞ea de Trabalho\Teste_Software_atividade2\temp_conversion-master\temp_conversion.py
+@@ -124,7 +124,7 @@
+     ap.add_argument("-u", "--unit", required=True, help="Unit input (Fahreheit, Celsius, Kelvin, Rankine)")
+     ap.add_argument("-r", "--response", required=True, help="Response input")
+     args = vars(ap.parse_args())
+-    tc = TempConvertor(args)
++    tc = None
+     tc\
+         .check_response_to_answer()
+ 
+</pre></body></html>
