@@ -40,9 +40,9 @@ Para eliminar os mutantes abaixo:
 ![](temp_conversion-master/imagem/img9.png)
 Foi adicionado um novo caso de teste para verificar a conversão de temperatura de Kelvin para Celsius:
 ![](temp_conversion-master/imagem/img12.png)
-Logo, foi feito um novo teste de cobertura:
+Após adição desse caso de teste, foi feito um novo teste de cobertura:
 ![](temp_conversion-master/imagem/img6.png)
-Após adição desse caso de teste, foi realizado um novo teste de mutação:
+Logo, foi realizado um novo teste de mutação:
 ![](temp_conversion-master/imagem/img7.png)
 
 Ao se analisar a imagem acima, percebe-se que, após a alteração no caso de teste para a conversão de Kelvin para Celsius, o número de mutantes sobreviventes diminuiu. Inicialmente, o resultado mostrava 54 mutantes sobreviventes e 76 mortos. Com a inclusão do novo caso de teste, o número de mutantes sobreviventes aumentou para 57, enquanto o número de mutantes mortos reduziu para 73. Assim deve gerar um novo relatório do teste mutação  executando o comando `python -m mutmut html`:
