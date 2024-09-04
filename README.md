@@ -40,7 +40,7 @@ Para eliminar os mutantes abaixo:
 ![](temp_conversion-master/imagem/img9.png)
 Foi adicionado um novo caso de teste para verificar a conversão de temperatura de Kelvin para Celsius:
 ![](temp_conversion-master/imagem/img12.png)
-Após adição desse caso de teste, foi feito um novo teste de cobertura:
+Após adição desse caso de teste, foi feito um novo teste:
 ![](temp_conversion-master/imagem/img6.png)
 Logo, foi realizado um novo teste de mutação:
 ![](temp_conversion-master/imagem/img7.png)
