@@ -31,7 +31,7 @@ pip install -r requirements.txt
 Ao se analisar a imagem acima, percebe-se que há um total de 130 mutantes gerados e testados durante a execução do mutmut. Desses 130 mutantes, 54 foram eliminados com sucesso, ou seja, os testes conseguiram detectar as alterações introduzidas por esses mutantes. Contudo, 76 mutantes sobreviveram, isto é, os testes existentes não foram suficientes para capturar as mudanças realizadas, sugerindo que pode haver lacunas na cobertura dos testes. 
 </div>
 
-2.Gerando o relatório HTML dos resultados de mutação com o comando `python -m mutmut html`::
+2.Gerando o relatório HTML dos resultados de mutação com o comando `python -m mutmut html`:
 ![](temp_conversion-master/imagem/img8.png)
 
 ## Novo Caso de Teste
